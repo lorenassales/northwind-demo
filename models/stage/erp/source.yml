@@ -1,4 +1,5 @@
 version: 2
+
 sources:
   - name: erp
     description: Fonte do ponto de vendas da Northwind.
@@ -12,3 +13,5 @@ sources:
             tests:
               - unique
               - not_null
+              
+      - name: products
