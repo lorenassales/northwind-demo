@@ -9,5 +9,15 @@ models:
         tests:
           - unique
           - not_null
+
       - name: id_funcionario
+        description: Essa é a chave primária de funcionários
+        tests:
+          - unique
+          - not_null
+
       - name: id_gerente
+        description: Essa é a chave primária de gerentes
+        tests:
+          - unique
+          - not_null
