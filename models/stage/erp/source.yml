@@ -31,8 +31,7 @@ sources:
             description: Chave primária da tabela order_details
             tests: 
               - unique
-              - not_null
-              
+              - not_null              
 
       - name: products
         description: Tabela com o cadastro dos produtos comercializados na Northwind
