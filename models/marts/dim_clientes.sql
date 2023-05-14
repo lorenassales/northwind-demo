@@ -9,7 +9,6 @@ with
             row_number() over (order by id_cliente) as sk_cliente
             , *   
         from clientes
-
     )
 
     select *
