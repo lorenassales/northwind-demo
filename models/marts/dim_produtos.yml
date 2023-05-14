@@ -1,0 +1,31 @@
+
+version: 2
+
+models:
+  - name: dim_produtos
+    description: Essa é a dimensão com dados de produtos.
+    columns:
+      - name: sk_produtos
+        description: Essa é a chave surrogate key da tabela.
+        tests:
+          - unique
+          - not_null
+
+      - name: id_produto
+        description: Essa é a chave primária de produtos
+        tests:
+          - unique
+          - not_null
+
+      - name: id_fornecedor
+        description: Essa é a chave primária de fornecedores
+        tests:
+          - unique
+          - not_null
+
+      - name: id_categoria
+        description: Essa é a chave primária de categorias
+        tests:
+          - unique
+          - not_null
+          
