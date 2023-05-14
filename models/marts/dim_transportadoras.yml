@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: dim_transportadoras
+    description: Essa é a dimensão com dados de transportadoras.
+    columns:
+      - name: sk_transportadora
+        description: Essa é a chave surrogate key da tabela.
+        tests:
+          - unique
+          - not_null
+
+      - name: id_transportadora
+        description: Essa é a chave primária de transportadora
+        tests:
+          - unique
+          - not_null
