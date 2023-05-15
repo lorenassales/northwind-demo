@@ -13,7 +13,7 @@ with
             , case
                 when discontinued = 1 then true --ao invés do 'true', poderia ser 'sim'
                 else false --ao invés do 'false', poderia ser 'nao'
-            end as is_discontinuado --ao invés do 'is_descontinuado', poderia ser 'eh_discontinuado?'
+            end as is_discontinued --ao invés do 'is_discontinued', poderia ser 'eh_descontinuado?'
         from {{ source('erp', 'products') }}
     )
 select *
