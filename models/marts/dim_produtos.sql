@@ -25,7 +25,7 @@ with
             , produtos.unidades_em_estoque
             , produtos.unidades_por_ordem
             , produtos.nivel_reabastecimento
-            , produtos.is_discontinuado
+            , produtos.is_discontinued
             , categorias.nome_categoria
             , categorias.descricao_categoria
             , fornecedores.nome_fornecedor
@@ -45,7 +45,7 @@ with
 
     , transformacoes as (
         select
-            row_number() over (order by id_produto) as sk_produtos
+            row_number() over (order by id_produto) as sk_produto
             , *            
         from join_tabelas                  
     )
